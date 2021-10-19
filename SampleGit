@@ -1,0 +1,26 @@
+package rea;
+import java.util.Scanner; 
+
+public class Rea {
+
+    public static void main(String[] args) {
+Scanner area = new Scanner(System.in);
+Customer brea = new Customer("Rea Jean");  
+Product crea = new Product("Ram ", 4, 1500);
+Product drea = new Product("HDD ", 1000, 2500);    
+    
+    
+    brea.display();
+        System.out.println("Product that you ordered: ");
+        crea.Order();
+        drea.Order();
+        System.out.println("");
+        System.out.println("Please enter the amount of payment: ");
+        double Amountpaid = area.nextDouble();
+        double Total = crea.reaprice+drea.reaprice;
+        double Exchange = Amountpaid - Total;
+        System.out.println("Amount paid: "+ Amountpaid +" Pesos");
+        System.out.println("Total price: "+ Total +" Pesos");
+        System.out.println("Exchange: "+ Exchange +" Pesos");        
+    }
+}
