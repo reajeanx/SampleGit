@@ -1,0 +1,16 @@
+package rea;
+
+public class Product {
+    String reaname;
+    int reameasure;
+    double reaprice;
+    
+    public Product (String rea, int jean, double rase){
+    reaname = rea;
+    reameasure = jean;
+    reaprice = rase;
+}
+    public void Order(){
+        System.out.println("Product: "+ reaname + "\"" + " Pieces: " + reameasure + "\"" + " Price: " + reaprice);
+    }
+}
