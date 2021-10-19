@@ -1,0 +1,12 @@
+package rea;
+
+public class Customer {
+     String Jean;
+     
+public Customer(String Rea){
+    Jean = Rea;
+}
+public void display(){
+    System.out.println("Name of Customer: " + Jean);
+}
+}
